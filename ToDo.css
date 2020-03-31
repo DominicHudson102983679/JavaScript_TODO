@@ -5,17 +5,14 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    font-family: 'Sen', sans-serif;
 }
-
-
-
-
-
 
 #BodyBox {
     width: 400px;
     height: 500px;
-    background-color: greenyellow;
+    background-color: rgb(255, 255, 255);
+    border-style: ridge;
 }
 
 #EntryAddDiv {
@@ -25,6 +22,7 @@ body {
 }
 
 #EntryInput {
+
     width: 260px;
     margin-top: 10px;
     margin-left: 10px;
@@ -33,7 +31,10 @@ body {
     padding: 10px;
 }
 
-#AddButton {
+button {
+    color: white;
+    background-color: rgb(58, 109, 7);
+
     width: 90px;
     margin-top: 10px;
     margin-right: 10px;
@@ -42,15 +43,8 @@ body {
     padding: 10px;
 }
 
-
-
-
-
-
-
-
-#ToDo {
-    background-color: white;
+p {
+    background-color: rgb(172, 140, 0);
     width: 360px;
     margin-top: 5px;
     margin-left: 10px;
@@ -60,6 +54,7 @@ body {
     
 }
 
-#ToDoText {
+p {
     text-align: center;
+
 }

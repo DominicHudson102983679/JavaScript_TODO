@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo.html</title>
     <link href="ToDo.css" rel="stylesheet" type="text/css"> 
+    
 </head>
 <body>
     <div id="BodyBox">
 
         <div id="EntryAddDiv">
             <input id="EntryInput" type="text" placeholder="Enter Task Here:">
-                <div id="AddBox">
-                    <button id="AddButton">Add</button>
-                </div>
+            <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+            <button onclick="newElement()" class="Add">ADD</button>    
          </div>
-
-        
 
         <div id="ToDo">
             <div id="ToDoBox">
-                <div id="ToDoText">To Do List:</div>
+                <p>To Do List:</p>
+                <ul id="myUL"></ul>
             </div>
         </div>
 
     </div>
+
+    <script src="ToDo.js"></script>
     
     
 </body>
