@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo.html</title>
-    <link href="ToDo.css" rel="stylesheet" type="text/css"> 
+    <link href="ToDo.css" rel="stylesheet" type="text/css">
+     
+
+    
     
 </head>
 <body>
@@ -13,14 +16,20 @@
         <div id="EntryAddDiv">
             <input id="EntryInput" type="text" placeholder="Enter Task Here:">
             <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-            <button onclick="newElement()" class="Add">ADD</button>    
+            <button id="addBtn" onclick="newElement()" class="Add">ADD</button>   
          </div>
 
         <div id="ToDo">
             <div id="ToDoBox">
                 <p>To Do List:</p>
-                <ul id="myUL"></ul>
+                <ul id="myUL"><i id="deleteItem" class="fa fa-close"></i>
+                    <h3 id="taskTitle"></h3>
+                </ul>
             </div>
+        </div>
+
+        <div id="clearTasks">
+            <button href="#" class="clear-tasks" id="clear-tasks">Clear Tasks</button>
         </div>
 
     </div>
