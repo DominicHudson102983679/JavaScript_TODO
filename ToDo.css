@@ -43,6 +43,10 @@ body {
     padding: 10px;
 }
 
+#ToDo {
+    height: 390px;
+}
+
 p {
     background-color: rgb(172, 140, 0);
     width: 360px;
@@ -59,7 +63,7 @@ p {
 
 }
 
-#clear-tasks {
+#clearBtn {
     background-color: rgb(100, 32, 0);
     width: 380px;
     margin-top: 5px;
@@ -69,3 +73,6 @@ p {
     padding: 10px;
     
 }
+
+
+
