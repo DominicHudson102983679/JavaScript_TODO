@@ -65,7 +65,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-
+// upto 16:51 in 'Typescript/NodeJS collab ultra recordsing'
 
 
 function newElement() {
