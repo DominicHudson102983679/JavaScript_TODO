@@ -41,24 +41,33 @@ function addTask(e) {
   e.preventDefault();
 }
 */
+
+
+
 loadEventListeners();
+
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    myNodelist[i].appendChild(span);
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
 }
+
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-        var div = this.parentElement;
-        div.style.display = "none";
-    };
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
 }
+
+
+
+
 function newElement() {
     // creates a li element to build the list
     var li = document.createElement("li");
@@ -68,28 +77,36 @@ function newElement() {
     var t = document.createTextNode(inputValue);
     //adds the text that was input onto the previously built li element
     li.appendChild(t);
+
     // 'no text entered' pop up alert
     if (inputValue === '') {
-        alert("No Text Entered");
-    }
+      alert("No Text Entered");
+    } 
     // if field isnt left blank, calls the ul element and adds the text as a li element
     else {
-        document.getElementById("myUL").appendChild(li);
+      document.getElementById("myUL").appendChild(li);
     }
+ 
     //clears bar after entry
     document.getElementById("EntryInput").value = "";
+    }
+
+    /*
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  */
+  
+ 
+ function clearElement() {
+  document.getElementById("myUL").value = "";
 }
-/*
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-*/
-function clearElement() {
-    document.getElementById("myUL").value = "";
-}
+
+
+
 /* ---------- attempted js going off of a different Udemy js tutorial, couldnt get it working
 
 const EntryInput = document.getElementById("EntryInput");
@@ -134,3 +151,6 @@ function addTask(e) {
   e.preventDefault();
 }
 */
+
+  
+  
