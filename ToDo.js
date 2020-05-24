@@ -1,47 +1,3 @@
-/*
-const EntryInput = document.getElementById("EntryInput");
-const myUL = document.getElementById("myUL");
-const clearBtn = document.getElementById("clear-tasks");
-const taskInput = document.getElementById("taskTitle");
-
-loadEventListeners();
-
-function loadEventListeners(){
-  EntryInput.addEventListener("submit", addTask)
-}
-
-function addTask(e) {
-  if(EntryInput.value === ''){
-    alert("No Task Entered");
-  }
-
-  else {
-
-  const li = document.createElement("li");
-  li.className = "li";
-  li.appendChild(document.createTextNode(EntryInput.value));
-
-  const link = document.createElement("a");
-  link.className = "delete-item secondary-content";
-  link.innerHTML = "<i class='fa fa-remove'></i>";
-  li.appendChild(link)
-
-  EntryInput.appendChild(li);
-
-  taskInput.value = '';}
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-
-
-  e.preventDefault();
-}
-*/
-loadEventListeners();
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -51,7 +7,8 @@ for (i = 0; i < myNodelist.length; i++) {
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
 }
-var close = document.getElementsByClassName("close");
+// var close = document.getElementsByClassName("close");
+// ^error = "Duplicate identifier 'close'" fixed in .ts by commenting out line
 var i;
 for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
@@ -59,6 +16,7 @@ for (i = 0; i < close.length; i++) {
         div.style.display = "none";
     };
 }
+// upto 16:51 in 'Typescript/NodeJS collab ultra recordsing'
 function newElement() {
     // creates a li element to build the list
     var li = document.createElement("li");
@@ -87,50 +45,11 @@ for (i = 0; i < close.length; i++) {
   }
 }
 */
-function clearElement() {
-    document.getElementById("myUL").value = "";
+document.getElementById("clearBtn").addEventListener("click", clearAll);
+function clearAll() {
+    addEventListener;
+    document.getElementById("myUL").innerHTML = "";
 }
-/* ---------- attempted js going off of a different Udemy js tutorial, couldnt get it working
-
-const EntryInput = document.getElementById("EntryInput");
-const myUL = document.getElementById("myUL");
-const clearBtn = document.getElementById("clear-tasks");
-const taskInput = document.getElementById("taskTitle");
-
-loadEventListeners();
-
-function loadEventListeners(){
-  EntryInput.addEventListener("submit", addTask)
-}
-
-function addTask(e) {
-  if(EntryInput.value === ''){
-    alert("No Task Entered");
-  }
-
-  else {
-
-  const li = document.createElement("li");
-  li.className = "li";
-  li.appendChild(document.createTextNode(EntryInput.value));
-
-  const link = document.createElement("a");
-  link.className = "delete-item secondary-content";
-  link.innerHTML = "<i class='fa fa-remove'></i>";
-  li.appendChild(link)
-
-  EntryInput.appendChild(li);
-
-  taskInput.value = '';}
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-
-
-  e.preventDefault();
-}
-*/
+//  function clearElement() {
+//   document.getElementById("myUL").reset();
+// }
